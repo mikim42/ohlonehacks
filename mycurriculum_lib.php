@@ -22,8 +22,6 @@ define('TB_MAP', 'map');
 require_once 'login.php';
 require_once 'mycurriculum_sql.php';
 require_once 'mycurriculum_html.php';
-require_once 'mycurriculum_student.php';
-require_once 'mycurriculum_course.php';
 
 ini_set('session.use_only_cookies', 1);
 
