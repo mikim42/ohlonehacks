@@ -6,7 +6,7 @@
  *	Sair Abbas
  */
 
-require_once 'curriculumer_lib.php';
+require_once 'mycurriculum_lib.php';
 
 html_header();
 $curr_user = isset_user();

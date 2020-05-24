@@ -3,11 +3,11 @@ function html_header() {
 	echo <<<_END
 <html>
 	<head>
-		<title>Curriculumer</title>
+		<title>MyCurriculum</title>
 	</head>
 	<body>
 		<h1>
-			OhloneHacks - Curriculumer <br>
+			OhloneHacks - MyCurriculum <br>
 			Mingyun Kim <br>
 			Daniel Tran <br>
 			Soyeon Wang <br>
@@ -15,7 +15,7 @@ function html_header() {
 		</h1>
 		<h2>This Website Requires Cookies</h2>
 		<hr>
-		<h1 style="text-indent:165px;">Curriculumer Backend Demo</h1>
+		<h1 style="text-indent:165px;">mycurriculum Backend Demo</h1>
 _END;
 }
 
@@ -29,7 +29,7 @@ _END;
 function html_login() {
 	echo <<<_END
 			<h2 style="text-indent:250px;">Login</h2>
-		<form method='post' action='curriculumer_main.php' enctype='multipart/form-data'>
+		<form method='post' action='mycurriculum_main.php' enctype='multipart/form-data'>
 			<pre>
 		Student ID : <input size='40' maxlength='32' type='text' name='loginid'><br>
 		  Password : <input size='40' maxlength='32' type='password' name='loginpw'><br>
@@ -42,7 +42,7 @@ _END;
 function html_logout() {
 	echo <<<_END
 	<div style="margin-left:250px";>
-	<form method='post' action='curriculumer_main.php' enctype='multipart/form-data'>
+	<form method='post' action='mycurriculum_main.php' enctype='multipart/form-data'>
 		<input type='submit' name='logout' value='Sign Out'>
 	</form>
 	</div>
@@ -51,7 +51,7 @@ _END;
 
 function html_main_opt() {
 	echo <<<_END
-		<form method='post' action='curriculumer_main.php' enctype='multipart/form-data'>
+		<form method='post' action='mycurriculum_main.php' enctype='multipart/form-data'>
 			<pre>
 			<input type='submit' style='width: 125px; font-size: 24;' name='search' value='Search Classes'><br>
 			<input type='submit' style='width: 125px; font-size: 24;' name='map' value='Course Map'><br>

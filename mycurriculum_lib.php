@@ -20,10 +20,10 @@ define('TB_OFFER', 'offer');
 define('TB_MAP', 'map');
 
 require_once 'login.php';
-require_once 'curriculumer_sql.php';
-require_once 'curriculumer_html.php';
-require_once 'curriculumer_student.php';
-require_once 'curriculumer_course.php';
+require_once 'mycurriculum_sql.php';
+require_once 'mycurriculum_html.php';
+require_once 'mycurriculum_student.php';
+require_once 'mycurriculum_course.php';
 
 ini_set('session.use_only_cookies', 1);
 
@@ -33,7 +33,7 @@ function sanitizeStr($conn, $var) {
 
 function to_main($msg) {
 	unset_user();
-	return "<form method='post' action='curriculumer_main.php' enctype='multipart/form-data'>".
+	return "<form method='post' action='mycurriculum_main.php' enctype='multipart/form-data'>".
 			$msg."<input type='submit' name='back' value='Back to Main'>"."</form>";
 }
 
@@ -114,7 +114,7 @@ _END;
 		echo "</td>
 			<td>$row[3]</td>
 			<td><br>
-			<form method='post' action='curriculumer_main.php' enctype='multipart/form-data'>
+			<form method='post' action='mycurriculum_main.php' enctype='multipart/form-data'>
 				<input type='hidden' name='search' value='$row[0]'>
 				<input type='submit' name='detail' value='Check'>
 			</form>
